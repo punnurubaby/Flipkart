@@ -4,9 +4,9 @@ pipeline{
   // label'Script_Slave'
  // }
   stages{
-    stage(GitCheckout)
+    stage('GitCheckout')
       steps{
-       git branch: 'J2EE',url:'https://github.com/punnurubaby/onlinebookstore.git'
+       git branch: 'J2EE', url:'https://github.com/punnurubaby/onlinebookstore.git'
       }
    }
  }
