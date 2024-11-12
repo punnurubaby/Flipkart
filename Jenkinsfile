@@ -1,11 +1,20 @@
 pipeline{
   agent any
+  // agent{
+  // label'Script_Slave'
+ // }
   stages{
-    stage('echocondition'){
+    stage(GitCheckout)
       steps{
-        sh'''sleep 90'''
-        sh 'echo "Hello-World"'
+       git branch: 'J2EE',url:'https://github.com/punnurubaby/onlinebookstore.git'
       }
-    }
-  }
+   }
+ }
 }
+      
+        
+       
+          
+    
+  
+
